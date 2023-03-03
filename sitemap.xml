@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://course-sites.co.uk/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://course-sites.co.uk/booki/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://course-sites.co.uk/edgeledger/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://course-sites.co.uk/secret/index.php</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://course-sites.co.uk/portfolio/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://course-sites.co.uk/edgeledger/blog.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://course-sites.co.uk/edgeledger/index.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://course-sites.co.uk/edgeledger/post.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+</urlset>

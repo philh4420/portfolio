@@ -1,0 +1,16 @@
+{
+  "name": "web-hosting-index",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/styles.scss css/styles.css",
+    "404": "sass --watch sass/404.scss css/404.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.56.2"
+  }
+}

@@ -1,0 +1,124 @@
+@use "../utils/" as u;
+
+.logo {
+  width: 50px;
+  height: 50px;
+  animation-name: nav-link-load;
+  animation-duration: var(--nav-link-load-time);
+  animation-timing-function: ease-in;
+  animation-delay: var(--nav-load-time);
+  animation-fill-mode: forwards;
+  transform: scale(0);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: u.$background;
+  color: white;
+  animation: nav-load var(--nav-load-time) ease-in-out;
+}
+
+nav ul {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  list-style: none;
+  padding: 10px;
+  margin: 0 10px;
+  animation-name: nav-link-load;
+  animation-duration: var(--nav-link-load-time);
+  animation-timing-function: ease-in-out;
+  animation-delay: var(--nav-load-time);
+  animation-fill-mode: forwards;
+  transform: scale(0);
+}
+
+nav li:first-child {
+  animation-name: nav-first-link-load;
+  transform: translateX(-1000%);
+}
+
+nav li:last-child {
+  animation-name: nav-last-link-load;
+  transform: translateX(1000%);
+}
+
+nav li:hover {
+  background-color: u.$background;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.main-heading {
+  font-size: 4em;
+  position: relative;
+  font-family: "Source Code Pro", monospace;
+  color: u.$font;
+  position: relative;
+  width: max-content;
+}
+
+.main-heading::before,
+.main-heading::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.subtitle {
+  font-size: 2em;
+  color: u.$font;
+}
+
+.nav-wrapper {
+  display: flex;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-image {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  // box-shadow: -2px -2px 21px -4px rgba(0,0,0,0.7);
+}
+
+.card {
+  box-shadow: 0px 0px 24px 3px rgba(0, 0, 0, 0.4);
+}
+
+.nav-button {
+  padding: 1em;
+}
+
+.btn {
+  width: 90%;
+  justify-content: center;
+  padding: 2% 10%;
+}

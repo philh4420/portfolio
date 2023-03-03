@@ -1,0 +1,55 @@
+@use "../utils/" as u;
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    background: u.$background2;
+    --nav-load-time: 700ms;
+    --nav-link-load-time: 900ms;
+    --article-load-delay: calc(var(--nav-load-time) + var(--nav-link-load-time));
+}
+
+.container {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body p {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+}
