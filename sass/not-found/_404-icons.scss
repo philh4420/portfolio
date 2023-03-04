@@ -3,12 +3,12 @@
 .social {
   display: flex;
   justify-content: center;
-  padding: 40px 0;
+  align-items: center;
+  padding: 85px 0;
   animation: article-load 1000ms ease-in-out calc(var(--article-load-delay) + 200ms);
   animation-fill-mode: both;
   animation-delay: 1s;
   transform: translateY(-20px);
-  // opacity: 0;
 }
 .icons {
   display: flex;

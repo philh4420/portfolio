@@ -1,1 +1,10 @@
 @use "../utils/" as u;
+
+.footer {
+  background-color: u.$background;
+  color: u.$font;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
