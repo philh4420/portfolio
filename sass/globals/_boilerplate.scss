@@ -4,6 +4,9 @@ html {
     box-sizing: border-box;
     font-size: 100%;
     scroll-behavior: smooth;
+    width: 100vw;
+    width: 100svw;
+    width: 100dvw;
 }
 
 *,
@@ -11,7 +14,6 @@ html {
 ::after {
     box-sizing: border-box;
 }
-
 body {
     margin: 0;
     padding: 0;
