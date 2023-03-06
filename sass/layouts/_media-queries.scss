@@ -12,6 +12,11 @@
         justify-content: center;
     }
 
+    .grid-row {
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+    }
+
     .icons {
         flex-wrap: wrap;
         gap: 50px;
@@ -25,6 +30,11 @@
 
     .subtitle {
         font-size: 1.2em;
+    }
+
+    .grid-row {
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
     }
 }
 

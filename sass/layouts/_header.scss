@@ -88,25 +88,26 @@ nav a {
 }
 
 .nav-wrapper {
-  display: flex;
-  padding: 20px;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 10px;
 }
 
-.row {
-  display: flex;
+.grid-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.card {
+  padding: 0 5px;
 }
 
 .nav-image {
   width: 100%;
   aspect-ratio: 16/9;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  padding: 1em;
-  // box-shadow: -2px -2px 21px -4px rgba(0,0,0,0.7);
+  border: 2px solid u.$secondary;
 }
 
 .card {
