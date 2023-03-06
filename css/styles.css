@@ -20,9 +20,9 @@ html {
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
   font-family: "Roboto", sans-serif;
   text-align: center;
-  overflow: hidden;
   background: #111827;
   --nav-load-time: 700ms;
   --nav-link-load-time: 900ms;
@@ -38,7 +38,6 @@ a {
 }
 
 body p {
-  max-width: 600px;
   margin: 20px auto;
 }
 
@@ -58,6 +57,42 @@ a,
 a:visited,
 a:active {
   text-decoration: none;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  height: -moz-fit-content;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  color: black;
+}
+
+b:hover {
+  color: rgb(14, 112, 253);
+}
+
+.text-wrap > p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.text-wrap > h3 {
+  white-space: pre-wrap;
 }
 
 .main-heading::before {
@@ -235,16 +270,13 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
 }
 
 .main-heading {
   font-size: 4em;
-  position: relative;
   font-family: "Source Code Pro", monospace;
   color: rgb(254, 253, 255);
   position: relative;
-  width: max-content;
 }
 
 .main-heading::before,
@@ -265,14 +297,13 @@ nav a {
 .nav-wrapper {
   display: grid;
   grid-template-rows: repeat(3, auto);
-  grid-gap: 10px;
+  grid-gap: 0 10px;
 }
 
 .grid-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   flex-wrap: wrap;
-  padding: 0 20px;
 }
 
 .card {
@@ -280,7 +311,7 @@ nav a {
 }
 
 .nav-image {
-  width: 100%;
+  max-width: 100%;
   aspect-ratio: 16/9;
   border: 2px solid rgb(0, 230, 77);
 }
@@ -289,17 +320,12 @@ nav a {
   box-shadow: 0px 0px 24px 3px rgba(0, 0, 0, 0.4);
 }
 
-.nav-button {
-  padding: 1em;
-}
-
-.btn {
-  width: 90%;
-  justify-content: center;
-  padding: 2% 10%;
-}
-
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  html,
+  body,
+  div {
+    width: 100%;
+  }
   .main-heading {
     font-size: 1.2em;
   }

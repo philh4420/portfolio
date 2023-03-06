@@ -1,0 +1,36 @@
+@use "../utils" as u;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  height: -moz-fit-content;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  color: black;
+}
+b {
+  &:hover {
+    color: u.$primary;
+  }
+}
+
+.text-wrap > p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.text-wrap > h3 {
+  white-space: pre-wrap;
+}

@@ -15,9 +15,9 @@ html {
 body {
     margin: 0;
     padding: 0;
+    width: 100%;
     font-family: "Roboto", sans-serif;
     text-align: center;
-    overflow: hidden;
     background: u.$background2;
     --nav-load-time: 700ms;
     --nav-link-load-time: 900ms;
@@ -33,7 +33,6 @@ a {
 }
 
 body p {
-    max-width: 600px;
     margin: 20px auto;
 }
 
