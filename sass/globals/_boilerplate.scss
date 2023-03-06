@@ -19,6 +19,7 @@ body {
     padding: 0;
     font-family: "Roboto", sans-serif;
     text-align: center;
+    overflow: hidden;
     background: u.$background2;
     --nav-load-time: 700ms;
     --nav-link-load-time: 900ms;
