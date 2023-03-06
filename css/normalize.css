@@ -13,6 +13,7 @@ html {
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
+  width: 100%;
 }
 
 /* Sections
@@ -24,6 +25,8 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 /**

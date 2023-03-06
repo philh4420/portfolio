@@ -1,9 +1,4 @@
 @media screen and (min-width: 320px) and (max-width: 480px) {
-    html,
-    body,
-    div {
-        width: 100%;
-    }
     .main-heading {
         font-size: 1.2em;
     }
@@ -13,7 +8,6 @@
     }
 
     .social {
-        flex-direction: column;
         justify-content: center;
     }
 
