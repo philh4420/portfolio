@@ -4,6 +4,7 @@ html {
     box-sizing: border-box;
     font-size: 100%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 *,
@@ -12,6 +13,7 @@ html {
     box-sizing: border-box;
 }
 body {
+    overflow-x: hidden;
     font-family: "Roboto", sans-serif;
     text-align: center;
     background: u.$background2;
